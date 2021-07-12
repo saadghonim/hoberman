@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Frutiger LT Arabic 45';
+    src: url('FrutigerLTArabic-45Light.woff2') format('woff2'),
+        url('FrutigerLTArabic-45Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Arabic 45';
+    src: url('FrutigerLTArabic-65Bold.woff2') format('woff2'),
+        url('FrutigerLTArabic-65Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Arabic 55 Roman';
+    src: url('FrutigerLTArabic-55Roman.woff2') format('woff2'),
+        url('FrutigerLTArabic-55Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Arabic 55 Roman';
+    src: url('FrutigerLTArabic-75Black.woff2') format('woff2'),
+        url('FrutigerLTArabic-75Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

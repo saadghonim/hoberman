@@ -1,0 +1,1276 @@
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../fonts/FrutigerLTArabic-45Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../fonts/FrutigerLTArabic-55Roman.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../fonts/FrutigerLTArabic-65Bold.woff2') format('woff2');
+  font-weight:  700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../fonts/FrutigerLTArabic-75Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  font-family: 'Frutiger';
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+button{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+/* *******************************start lang-top**************************** */
+.lang-main{
+  background-color: rgb(34, 55, 109);
+  padding:3px 0;
+}
+.lang_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding-left: 10px;
+
+}
+.right_top, .icon_text{
+  display: flex;
+  align-items: center;
+}
+.icon_text{
+  margin-right: 5px;
+  margin-left: 20px;
+}
+.icon_text p{
+  font-size: 13px;
+  font-family: "Frutiger";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.icon_div{
+  width: 20px;
+  margin-left: 10px;
+  display:flex;
+  align-items: center;
+}
+.icon_div img{
+  max-width: 100%;
+}
+.left_top a{
+  font-size: 13px;
+  font-family: "Frutiger";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.left_top a:hover{
+  text-decoration: none;
+  color: rgb(224, 60, 49);
+  transition: .5s;
+}
+.left_top a:focus{
+  text-decoration: none;
+}
+@media(max-width:767px){
+  .lang-main{
+    display: none;
+  }
+}
+/* *******************************end lang-top****************************  */
+
+/* *******************************start login_main**************************** */
+.login_main{
+  display: flex;
+  align-items: center;
+}
+.menu_icon{
+  background:transparent;
+  border:none;
+  font-size: 18px bold;
+  padding:0 10px 0 15px;
+}
+.menu_icon:hover{
+  color: rgb(224, 60, 49);
+  transition: .5s;
+}
+.logo{
+  padding: 5px 0;
+  width: 25%;
+}
+.input_div{
+  padding: 20px 30px 20px 0;
+  width: 50%;
+}
+.div_input{
+  width: auto;
+  position: relative;
+}
+.bt_search{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: rgb(224, 60, 49);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.bt_search:hover{
+  color:rgb(224, 60, 49);
+  background-color: transparent;
+  transition: .5s;
+}
+.input_div input{
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  height: 48px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  padding-right: 25px;
+  font-size: 14px;
+  font-family: "Frutiger";
+  color: rgb(187, 187, 187);
+  font-weight: 400;
+
+}
+.input_div input:focus{
+  outline: 0;
+  border: 1px solid rgb(224, 60, 49);
+  transition: .5s;
+}
+.login_{
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+  width: 25%;
+}
+.login_ .bt_user{
+  font-size: 14px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: rgb(34, 55, 109);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.user_{
+  display: flex;
+  align-items: center;
+}
+.bt_user i{
+  padding-left:5px ;
+}
+.shopping_ .bt_shopping{
+  width: 45px;
+  height: 45px;
+  border:1px solid rgb(236, 236, 236);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  color: rgb(34, 55, 109);
+
+}
+.shopping_ .bt_shopping span{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(224, 60, 49);
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  right: -4px;
+  transition: .2s; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.shopping_ .bt_shopping:hover span{
+transform: scale(1.1);
+
+}
+@media(max-width:992px){
+  .login_main{
+    flex-wrap: wrap;
+  }
+  .logo{
+    width: 50%;
+    order: 1;
+  }
+  .input_div{
+    width: 92%;
+    order: 3;
+    padding:20px 0;
+    margin: auto;
+  }
+  .login_{
+    order: 2;
+    width: 50%;
+  }
+}
+@media(max-width: 767px){
+  .logo img{
+    width:72%;
+    }
+}
+@media(max-width: 567px){
+  .login_main{
+    padding: 10px 0 0 0;
+  }
+  .shopping_ .bt_shopping {
+    height: 40px;
+    width: 40px;
+  }
+  .menu_icon{
+    padding-right: 0;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+}
+/* *******************************end login_main**************************** */
+
+/* *******************************start navbar**************************** */
+.header{
+  border: 1px solid rgb(244, 244, 244);
+  border-left: none;
+  border-right: none;
+  box-shadow: 0px 2px 3px -2px rgb(22 22 22 / 10%);
+  margin-bottom: 10px;
+
+}
+.bt_nav-div{
+  display: flex;
+  position: relative;
+}
+.bt_nav{
+  position: relative;
+  background-color: rgb(224, 60, 49);
+  width: 271px;
+  height: 44px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 15px;
+  font-family: "Frutiger";
+  font-weight: 700;
+}
+.megamenu{
+  position:absolute;
+  top:44px;
+  background-color: rgb(247, 247, 247);
+  right: 0;
+  width: 271px;
+  padding: 10px 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+
+.mega_end{
+  right:544px;
+  padding-bottom:270px ;
+}
+.style_a {
+  font-size: 15px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  text-transform: uppercase;
+  color:rgb(34, 55, 109);
+  padding:15px 0;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.style_a i{
+  font-size: 8px;
+  color: #989898;
+  text-transform: uppercase;
+}
+.menu:last-child a{
+  border: none;
+}
+.bt_nav-div:hover .megamenu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.style_a:hover{
+  color: rgb(224, 60, 49);
+  transition: .5s;
+  text-decoration: none;
+}
+
+.menu {
+  display: block;
+  z-index: 999999;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.menu li {
+  display: inline-block;
+}
+.menu li.dropdown:hover > .submenu {
+  opacity:1;
+  visibility: visible;
+}
+.menu .submenu {
+  position:absolute;
+  top: 0;
+  background-color: rgb(247, 247, 247);
+  right: 252px;
+  width: 271px;
+  padding: 10px 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.submenu {
+  position:absolute;
+  /* top: 0; */
+  background-color: rgb(247, 247, 247);
+  right: 252px;
+  width: 271px;
+  padding: 10px 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.menu .submenu > li.dropdown:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.bt_nav .fa-bars{
+padding-left: 10px;
+}
+.fa-angle-down{
+  position: absolute;
+  left: 10px;
+  top:15px
+}
+.nav_bar{
+  display: flex;
+}
+.nav_{
+  display: flex;
+  align-items: center;
+  padding: 12px 30px 12px 0;
+
+}
+.nav_ .anc_nav{
+  margin-left: 25px;
+  font-size: 15px;
+  font-family: "Frutiger";
+  color: rgb(34, 55, 109);
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.nav_ .anc_nav:hover{
+  text-decoration: none;
+  color:rgb(224, 60, 49);
+  transition: .5s;
+}
+@media(max-width:992px){
+  .header{
+    display: none;
+  }
+}
+/* *******************************end navbar**************************** */
+
+/*  *******************************start slider****************************  */
+.slider{
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+.slide_right{
+  overflow: hidden;
+}
+.slide_left{
+  overflow: hidden;
+  height: 100%;
+}
+
+.slider .slide_img{
+  position: relative;
+}
+.slider .text_slide{
+  width: 100%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.slide_left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .slide_img:after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  opacity:0.8;
+}
+.text_slide h1{
+  font-size: 48px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.text_slide p{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-align: center;
+}
+
+.slider .owl-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.slider .owl-dots{
+  position: absolute;
+  bottom: 30px;
+  transform: translatex(-50%);
+  left: 50%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+
+}
+.slider .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  transform: translateY(-50px);
+  top: 57%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+
+}
+.slider .owl-carousel .owl-nav button.owl-next{
+  left:10px;
+  z-index: 1;
+}
+.slider .owl-carousel .owl-nav button.owl-prev{
+  right: 10px;
+  z-index: 1;
+}
+@media(max-width:767px){
+  .slider{
+    display: flex;
+    flex-direction: column;
+  }
+  .slide_left a{
+    display: inline-block;
+    text-align: center;
+  }
+  .slide_left {
+    margin: auto;
+  }
+  .slider .slide_img{
+    height: 409px;
+  }
+  .owl-carousel .owl-nav{
+    display: none;
+  }
+  .slider{
+    margin-bottom: 40px;
+  }
+
+}
+@media(max-width:576px){
+  .slider .slide_img{
+    height: 332px;
+  }
+  .text_slide p{
+    font-size: 27px;
+  }
+}
+/*  *******************************end slider****************************  */
+
+/* *******************************start Sections****************************  */
+.Sections{
+  margin-bottom: 70px;
+}
+  h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  color: rgb(34, 55, 109);
+}
+.Sections .anc_div{
+  background-color: rgb(34, 55, 109);
+  padding:50px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.Sections .anc_div:hover{
+  text-decoration: none;
+  background-color: rgb(224, 60, 49);
+  transition:.5s;
+}
+.Sections .sec_img{
+  height: 61px;
+  width: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.Sections .anc_div img{
+  width: auto;
+}
+.Sections .anc_div p{
+  font-size: 17px;
+  font-family: "Frutiger";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.Sections .owl-nav{
+  display: none;
+}
+  .owl-dots{
+  display: flex;
+  justify-content: center;
+}
+  .owl-dot{
+  background-color: rgb(204, 204, 204)!important;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+}
+  .owl-dot.active{
+  background-color: rgb(224, 60, 49)!important;
+
+}
+@media(max-width:767px){
+  .Sections{
+    margin-bottom: 40px;
+  }
+}
+/* *******************************end Sections****************************  */
+
+/* *******************************start best_seller****************************  */
+.best_seller{
+  margin-bottom: 50px;
+}
+.Producer_div{
+  position: relative;
+  border: 1px solid rgb(242, 242, 242);
+  padding: 10px 0px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.Producer_div p{
+  background-color: rgb(250, 199, 201);
+  width: 73px;
+  height: 23px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  color: rgb(236, 32, 40);
+  font-weight: bold;
+  border-radius: 11.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Producer_div img{
+  max-width: 100%;
+  transition: .5s;
+}
+.Producer_div:hover img{
+  transform: translateY(-15px);
+}
+.item .price{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.item .price a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+.item .price h4{
+  font-size: 15px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: rgb(34, 55, 109);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.item .price .pri_num{
+  display: flex;
+  justify-content: center;
+}
+.item .price .pri_num span{
+  font-size: 16px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: #737373;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+.item .price .pri_num p{
+  font-size: 16px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  color: rgb(224, 60, 49);
+}
+.best_seller .owl-nav{
+  display: none;
+}
+@media(max-width:767px){
+  .best_seller{
+    margin-bottom: 40px;
+  }
+  .item .price{
+    margin-bottom: 20px;
+  }
+}
+/* *******************************end best_seller**************************** */
+
+
+
+/* ******************************* start sp_Product*********************** */ 
+.sp_Product{
+  display: flex;
+  margin-bottom: 60px;
+}
+.pro-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 60px 30px 70px;
+
+}
+.pro-text{
+  text-align: center;
+}
+.pro-img img{
+  margin-left: 60px;
+  transition: .5s;
+}
+.pro-img img:hover{
+  transform: scale(1.1);
+}
+.pro-img.r_{
+  background-color: rgb(219, 238, 254);
+  margin-left: 15px;
+}
+.pro-img.l_{
+  background-color: rgb(208, 209, 204);
+}
+
+.pro-img.r_backg{
+  background-color: rgb(117, 206, 217);
+  margin-left: 15px;
+}
+
+.pro-img.l_backg{
+  background-color: rgb(208, 209, 204);
+  
+}
+
+.pro-text p{
+  font-size: 30px;
+  font-family: "Frutiger";
+  color: rgb(34, 55, 109);
+  font-weight:700;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.pro-img button{
+  background-color: rgb(224, 60, 49);
+  width: 154px;
+  height: 42px;
+  border-radius: 21px;
+  font-size: 16px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  position: relative;
+}
+.pro-img button:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  background-color: transparent;
+  background-color: rgb(34, 55, 109);
+}
+
+@media(max-width:767px){
+  .sp_Product{
+    flex-direction: column;
+  }
+  .pro-img,.pro-img{
+    margin: 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .pro-img, .pro-img{
+    margin-bottom: 15px;
+  }
+  .pro-img a{
+    margin-bottom: 20px;
+  }
+  .pro-img {
+    padding: 30px;
+  }
+  .pro-img.r_{
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .pro-img.r_backg{
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .sp_Product{
+    margin-bottom: 40px;
+  }
+}
+/* ******************************* end sp_Product*********************** */
+
+/* ******************************* start cust_reviews************************* */
+.cust_reviews{
+  background-color: rgb(247, 247, 247);
+  padding:65px 0 60px;
+}
+.comment_div{
+  text-align: center;
+  border:1px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  padding:40px 35px 30px;
+  margin-bottom: 30px;
+}
+.comment_div h2{
+  font-size: 18px;
+  font-family: "Frutiger";
+  color: rgb(224, 60, 49);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.bt_div button{
+  font-size: 12px;
+  color: rgb(245, 209, 42);
+  margin-bottom: 20px;
+}
+.bt_div button:nth-last-child(5){
+  color: #cfcfcf;
+}
+.comment_div .img-comment{
+  position:absolute;
+  top: 20px;
+  left: 20px;
+}
+.comment_div p{
+  font-size: 16px;
+  font-family: "Frutiger";
+  color: rgb(35, 31, 32);
+}
+.cust_reviews .owl-nav{display: none;}
+@media(max-width:767px){
+  .comment_div {
+    margin-bottom: 20px;
+  }
+  
+}
+/* ******************************* end cust_reviews************************* */
+
+/* ******************************* start subscribe************************* */
+.subscribe{
+  background-color: rgb(34, 55, 109);
+  color: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+.sub_parant{
+  display: flex;
+  align-items: center;
+}
+.sub_parant p{
+  font-size: 22px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  width: 50%;
+}
+.sub_parant .inp_div{
+  width: 50%;
+  position: relative;
+}
+.sub_parant input{
+  width: 100%;
+  border: none;
+  border-right: 1px solid rgb(255, 255, 255);
+  background-color: rgb(34, 55, 109);
+  height: 30px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-family: "Frutiger";
+  color: #606f96;
+  font-weight: 700;
+}
+.sub_parant ::placeholder{
+    color: #606f96
+}
+.inp_div i{
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+.sub_parant input:focus{
+  outline: 0;
+
+}
+@media(max-width:767px){
+  .sub_parant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sub_parant .inp_div{
+    width: 90%;
+  }
+  .inp_div input{
+    border: transparent;
+  }
+  .sub_parant p{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .sub_parant input{
+    height: 40px;
+  }
+  .sub_parant input:focus{
+    border: 1px solid ;
+  }
+  .inp_div i{
+    top: 12px;
+  }
+}
+/* ******************************* end subscribe************************* */
+
+
+/* **************start footer************** */
+
+footer {
+  padding: 60px 0 70px ;
+  border:none;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.Follow_us h2{
+  font-size: 16px;
+  font-family: "Frutiger";
+  color: rgb(35, 31, 32);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.social-media{
+  display: flex;
+  margin: 0 15px 40px 0;
+
+}
+.social-media .social{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(35, 31, 32);
+  text-transform: uppercase;
+}
+.social-media .social:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(224, 60, 49);
+  transition: .5s;
+  text-decoration: none;
+}
+footer .down_f {
+  font-size: 16px;
+  font-family: "Frutiger";
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+} 
+
+
+footer .down_f:hover{
+  text-decoration: none;
+}
+.nest_list{
+  padding:0;
+}
+.nest_list a:hover{
+  text-decoration: none;
+  color: rgb(224, 60, 49);
+  transition: .5s;
+}
+.nest_list li a{
+  font-size: 16px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: #787878;
+  line-height: 30px;
+}
+.nest_list li a:focus{
+  text-decoration: none;
+}
+.nest_list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+.down_f  {
+  position:relative;
+  padding-right:10px;
+  text-align: right;
+  display: flex;
+  color: rgb(0, 0, 0);
+  height: 40px;
+  line-height: 28px;
+}
+.f_list .nest_list li a{
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none; 
+  margin-right: 10px;
+  line-height: 30px;
+}
+footer .down_f :hover{
+  text-decoration: none;
+}
+footer .f_list {
+  padding-top: 20px;
+}
+footer .f-bottom{
+  text-align: center;
+  margin-top: 40px;
+}
+.social-media{
+  justify-content: center;
+}
+.footer_social{
+  text-align: center;
+  padding: 30px 0 30px;
+
+}
+footer .f_list {
+  padding: 0; 
+  text-align: center;
+}
+}
+
+@media(max-width:991px){
+.down_f:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: -3px;
+  font-size: 15px;
+  line-height: 3.273;
+  font-weight: 900;
+}
+.down_f:after {
+  left: 0; }
+  .down_f[aria-expanded="true"]:after {
+  content: "\f106"; } 
+  .down_f{margin-bottom: 0;}
+}
+
+@media (min-width: 991px) {
+footer .f_list .nest_list {
+  display: none;
+  display: inline;
+
+} 
+}
+
+@media (max-width: 767px){
+  footer{
+    padding-bottom: 20px;
+  }
+  footer .f_list .nest_list{
+    text-align: right;
+  }
+  footer .down_f{
+    line-height: 45px;
+  }
+  footer .down_f{
+    margin-bottom: 0;
+  }
+  .social-media{
+    margin: 0px 0px 15px 0;
+
+  }
+  .Follow_us h2{
+    margin-bottom: 15px;
+  }
+}
+
+/* **************end footer*************** */
+
+/* **************start copy************** */
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright .left p{
+  font-size: 14px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: rgb(35, 31, 32);
+
+}
+
+.copyright .right{
+  display: flex;
+}
+.copyright .right a{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.copyright .right p{
+  font-size: 14px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: rgb(35, 31, 32);
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+}
+.copyright  i{
+  color: #e71111;
+  margin: 0 2px;
+
+}
+@media (max-width: 450px){
+  .copyright{
+    flex-direction: column;
+    justify-content: center;
+    height:85px;
+  }
+  .copyright .left p{
+    margin-bottom: 5px;
+
+  }
+
+}
+/* **************end copy************** */
+
+
+
+
+
+
+
+/* ****************************start menu*********************************** */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #182a5a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 99;
+  padding-top: 5px;
+}
+@media (max-width: 450px){
+  .sidenav {
+    position: absolute;
+  
+  }
+#main{
+  margin-right: 0px!important;
+  overflow-y:0 ;
+}
+}
+.sidenav a {
+  padding: 10px 20px 10px 0;
+  text-decoration: none;
+  font-size: 15px;
+  font-family:"Frutiger";
+  font-weight: 400;
+  color: rgb(153, 174, 232);
+  text-transform: uppercase;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #30406b;
+}
+.sidenav a:hover {
+  color: #ffffff;
+}
+.sidenav a:nth-child(17){
+  border: none;
+}
+.lang_menu .lang_h, .lang_lin{
+  padding: 10px 20px 10px 0;
+  font-size: 15px;
+  font-family:"Frutiger";
+  font-weight: 400;
+  color: rgb(153, 174, 232);
+}
+.lang_menu .lang_h{
+  background-color: #22376d;
+  color: #ffffff;
+
+}
+.list2_ a{
+  background-color: #22376d;
+  color: #ffffff;
+
+}
+
+.sidenav .closebtn {
+  display: none;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav a {font-size: 14px;}
+}
+.ovr_{
+  overflow-y: hidden;
+}
+.moboverlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  overflow: hidden;
+}
+.drop_{
+  position: relative;
+}
+#accordionExample li:last-child(2){
+  background-color: red;
+}
+#accordionExample li:nth-of-type(-2) .drop_ a{
+  border: 0;
+}
+.drop_:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  position: absolute;
+  color: rgb(153, 174, 232);
+  top: 1px;
+  font-size: 15px;
+  line-height: 3.273;
+  font-weight: 900;
+}
+.dirplink:after {
+  left: 20px; }
+  .drop_[aria-expanded="true"]:after {
+  content: "\f106"; } 
+  .drop_{margin-bottom: 0;}
+  :after, :before{
+    left:20px
+  }
+/* ****************************end menu*********************************** */
+
+
+
+
+
+
+
+
