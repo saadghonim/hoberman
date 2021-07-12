@@ -146,12 +146,12 @@ button{
   justify-content: center;
   font-size: 14px;
   color: rgb(255, 255, 255);
+  transition: .5s;
 }
 
 .bt_search:hover{
   color:rgb(224, 60, 49);
   background-color: transparent;
-  transition: .5s;
 }
 .input_div input{
   width: 100%;
@@ -179,7 +179,6 @@ button{
 }
 .login_ .bt_user:hover{
   color:rgb(224, 60, 49);
-  transition: .5s;
 }
 .login_ .bt_user{
   font-size: 14px;
@@ -189,6 +188,8 @@ button{
   display: flex;
   align-items: center;
   padding-left: 20px;
+  transition: .5s;
+
 }
 .user_{
   display: flex;
@@ -331,6 +332,7 @@ transform: scale(1.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: .5s
 }
 
 .style_a i{
@@ -347,7 +349,6 @@ transform: scale(1.1);
 }
 .style_a:hover{
   color: rgb(224, 60, 49);
-  transition: .5s;
   text-decoration: none;
 }
 .menu {
@@ -579,11 +580,12 @@ padding-left: 10px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  transition:.5s;
+
 }
 .Sections .anc_div:hover{
   text-decoration: none;
   background-color: rgb(224, 60, 49);
-  transition:.5s;
 }
 .Sections .sec_img{
   height: 61px;
@@ -638,6 +640,7 @@ padding-left: 10px;
   padding: 10px 0px;
   overflow: hidden;
   margin-bottom: 20px;
+  transition: .5s;
 }
 .Producer_div p{
   background-color: rgb(250, 199, 201);
@@ -996,10 +999,13 @@ footer .down_f:hover{
 .nest_list{
   padding:0;
 }
+.nest_list a{
+  transition: .5s;
+
+}
 .nest_list a:hover{
   text-decoration: none;
   color: rgb(224, 60, 49);
-  transition: .5s;
 }
 .nest_list li a{
   font-size: 16px;
