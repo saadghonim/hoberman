@@ -179,6 +179,7 @@ button{
 }
 .login_ .bt_user:hover{
   color:rgb(224, 60, 49);
+  transition: .5s;
 }
 .login_ .bt_user{
   font-size: 14px;
@@ -241,7 +242,7 @@ transform: scale(1.1);
   .input_div{
     width: 92%;
     order: 3;
-    padding:20px 0;
+    padding:15px 0;
     margin: auto;
   }
   .login_{
@@ -547,7 +548,9 @@ padding-left: 10px;
   .slider{
     margin-bottom: 40px;
   }
-
+  .slide_left img{
+    height: 100%;
+  }
 }
 @media(max-width:576px){
   .slider .slide_img{
@@ -681,6 +684,7 @@ padding-left: 10px;
 }
 .item .price h4:hover{
   color: rgb(236, 32, 40);
+  transition: .5s;
 }
 .item .price .pri_num{
   display: flex;
