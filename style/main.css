@@ -248,7 +248,7 @@ transform: scale(1.1);
 }
 @media(max-width: 767px){
   .logo img{
-    width:72%;
+    width:79%;
     }
 }
 @media(max-width: 567px){
@@ -261,6 +261,7 @@ transform: scale(1.1);
   }
   .menu_icon{
     padding-right: 0;
+    font-size: 18px;
   }
   .logo{
     display: flex;
