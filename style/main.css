@@ -972,12 +972,14 @@ footer {
   font-size: 18px;
   color: rgb(35, 31, 32);
   text-transform: uppercase;
+  transition: .5s;
+
 }
 .social-media .social:hover{
   color: rgb(255, 255, 255);
   background-color: rgb(224, 60, 49);
-  transition: .5s;
   text-decoration: none;
+  transition: .5s;
 }
 footer .down_f {
   font-size: 16px;
@@ -1229,7 +1231,7 @@ footer .f_list .nest_list {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition:.5s;
 }
 
 @media screen and (max-width: 450px) {
