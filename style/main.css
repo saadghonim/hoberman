@@ -341,7 +341,7 @@ transform: scale(1.1);
 .menu:last-child a{
   border: none;
 }
-.bt_nav:hover .megamenu{
+.bt_nav:hover + .megamenu,.megamenu:hover{
   visibility: visible;
   opacity: 1;
 }
