@@ -248,7 +248,7 @@ transform: scale(1.1);
 }
 @media(max-width: 767px){
   .logo img{
-    width:79%;
+    width:81%;
     }
 }
 @media(max-width: 567px){
