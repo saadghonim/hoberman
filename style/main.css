@@ -345,13 +345,11 @@ transform: scale(1.1);
   visibility: visible;
   opacity: 1;
 }
-
 .style_a:hover{
   color: rgb(224, 60, 49);
   transition: .5s;
   text-decoration: none;
 }
-
 .menu {
   display: block;
   z-index: 999999;
