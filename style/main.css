@@ -177,6 +177,9 @@ button{
   float: left;
   width: 25%;
 }
+.login_ .bt_user:hover{
+  color:rgb(224, 60, 49);
+}
 .login_ .bt_user{
   font-size: 14px;
   font-family: "Frutiger";
@@ -675,6 +678,9 @@ padding-left: 10px;
   color: rgb(34, 55, 109);
   font-weight: 400;
   margin-bottom: 10px;
+}
+.item .price h4:hover{
+  color: rgb(236, 32, 40);
 }
 .item .price .pri_num{
   display: flex;
