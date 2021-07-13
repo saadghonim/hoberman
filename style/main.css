@@ -1231,7 +1231,7 @@ footer .down_f:hover{
   line-height: 30px;
 }
 .nest_list{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 html[dir="rtl"] .f_list .nest_list li a{
   margin-right: 10px;
