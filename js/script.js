@@ -116,7 +116,7 @@ function closeNav() {
 }
 $(".moboverlay").click(function(){
   $(".closebtn").trigger("click");
-  // $('.moboverlay').fadeOut('fast');
+ 
 });
 
 
