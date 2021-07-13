@@ -471,9 +471,7 @@ html[dir="ltr"] .mega_end{
   text-transform: uppercase;
   transition: .5s;
 }
-.menu .style_a:last-child{
-  border: none;
-}
+
 .bt_nav:hover + .megamenu,.megamenu:hover{
   visibility: visible;
   opacity: 1;
@@ -814,7 +812,6 @@ html[dir="ltr"] .owl-dot{
 }
   .owl-dot.active{
   background-color: rgb(224, 60, 49)!important;
-
 }
 .Sections .item{
   position: relative;
@@ -824,7 +821,6 @@ html[dir="ltr"] .owl-dot{
   .Sections{
     margin-bottom: 40px;
   }
-
 }
 .Sections .owl-dots{
   margin-top: 30px;
