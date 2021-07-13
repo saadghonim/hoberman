@@ -982,13 +982,7 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
 
 @media(max-width:767px){
   .sp_Product{
-    flex-direction: column;
-  }
-  .pro-img,.pro-img{
-    margin: 0 0 15px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    justify-content: space-between;
   }
 
   .pro-img a{
@@ -1000,10 +994,10 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
     margin-bottom: 40px;
   }
   html[dir="rtl"] .sp_Product .pro-img:first-child{
-    margin-left: 0px;
+    margin-left: 15px;
   }
   html[dir="ltr"] .sp_Product .pro-img:first-child{
-    margin-right: 0px;
+    margin-right: 15px;
   }
 }
 
@@ -1410,9 +1404,7 @@ html[dir="ltr"] .copyright .right p{
 
 
 
-#main.active{
-  
-}
+
 html[dir="rtl"] #main.active{
   transform: translateX(-260px);
 }
