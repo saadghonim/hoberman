@@ -266,7 +266,10 @@ html[dir="ltr"] .drop_log{
   opacity: 1;
   visibility: visible;
 }
-.drop_log a{transition: .5s;}
+.drop_log a{
+  transition: .5s;
+  color: rgb(34, 55, 109);
+}
 .drop_log a:hover{
   text-decoration: none;
   color:rgb(224, 60, 49);
@@ -859,6 +862,7 @@ html[dir="ltr"] .Producer_div p{
 .item .price .pri_num{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .item .price .pri_num span{
   font-size: 16px;
@@ -868,10 +872,10 @@ html[dir="ltr"] .Producer_div p{
   text-decoration: line-through;
 }
 html[dir="rtl"] .item .price .pri_num span{
-  margin-left: 5px;
+  margin-right: 5px;
 }
 html[dir="ltr"] .item .price .pri_num span{
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .item .price .pri_num p{
   font-size: 16px;
