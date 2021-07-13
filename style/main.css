@@ -375,6 +375,7 @@ html[dir="ltr"] .bt_nav{
   background-color: rgb(247, 247, 247);
   width: 271px;
   z-index: 99;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -686,6 +687,7 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
   align-items: center;
   margin-bottom: 30px;
   transition:.5s;
+  height: 179px;
 
 }
 .Sections .anc_div:hover{
@@ -702,7 +704,6 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
 
 }
 .Sections .anc_div img{
-  /* width: auto; */
   max-width: 100%;
 }
 .Sections .anc_div p{
@@ -712,6 +713,8 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
   text-transform: uppercase;
   font-weight: 400;
   padding-bottom: 8px;
+  text-align: center;
+  width: 94%;
 }
 .Sections .owl-nav{
   display: none;
@@ -911,7 +914,7 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
   border:1px solid rgb(235, 235, 235);
   background-color: rgb(255, 255, 255);
   position: relative;
-  padding:40px 35px 30px;
+  padding:40px 35px 40px;
   margin-bottom: 30px;
 }
 .comment_div h2{
@@ -978,11 +981,12 @@ html[dir="ltr"] .comment_div .img-comment{
 .sub_parant .inp_div{
   width: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .sub_parant input{
   width: 100%;
   border: none;
-  border-right: 1px solid rgb(255, 255, 255);
   background-color: rgb(34, 55, 109);
   height: 30px;
   font-size: 14px;
@@ -992,9 +996,11 @@ html[dir="ltr"] .comment_div .img-comment{
 }
 html[dir="rtl"] .sub_parant input{
   padding-right: 20px;
+  border-right: 1px solid rgb(255, 255, 255);
 }
 html[dir="ltr"] .sub_parant input{
   padding-left: 20px;
+  border-left: 1px solid rgb(255, 255, 255);
 }
 .sub_parant ::placeholder{
     color: #606f96
@@ -1323,8 +1329,8 @@ html[dir="ltr"] .sidenav{
   
   }
 #main{
-
   overflow-y:0 ;
+
 }
 html[dir="rtl"] #main{
   margin-right: 0px!important;
@@ -1344,11 +1350,12 @@ html[dir="ltr"] #main{
   transition: 0.3s;
   border-bottom: 1px solid #30406b;
 }
+
 html[dir="rtl"] .sidenav a{
-  padding: 10px 20px 10px 0;
+  padding: 10px 20px 10px 31px;
 }
 html[dir="ltr"] .sidenav a{
-  padding: 10px 10px 20px 0;
+  padding: 10px 31px 20px 20px;
 }
 .sidenav a:hover {
   color: #ffffff;
@@ -1366,7 +1373,7 @@ html[dir="rtl"] .lang_menu .lang_h, .lang_lin{
   padding: 10px 20px 10px 0;
 }
 html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
-  padding: 10px 10px 20px 0;
+  padding: 10px 0 20px 20px;
 }
 .lang_menu .lang_h{
   background-color: #22376d;
@@ -1384,6 +1391,7 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
 }
 
 #main {
+  position: relative;
   transition:.5s;
 }
 
@@ -1392,6 +1400,7 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
 }
 .ovr_{
   overflow-y: hidden;
+  overflow: hidden;
 }
 .moboverlay {
   position: fixed;
@@ -1423,18 +1432,16 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
   line-height: 3.273;
   font-weight: 900;
 }
-html[dir="rtl"] .dirplink:after {
+html[dir="rtl"] :after, :before{
   left: 20px;
 }
-html[dir="ltr"] .dirplink:after {
+html[dir="ltr"] :after, :before {
   right: 20px;
 }
 .drop_[aria-expanded="true"]:after {
 content: "\f106"; } 
 .drop_{margin-bottom: 0;}
-:after, :before{
-  left:20px
-}
+
 
 /* ****************************end menu*********************************** */
 
