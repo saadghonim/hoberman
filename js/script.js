@@ -6,7 +6,7 @@ $('.slide_right .owl-carousel').owlCarousel({
   nav:true,
   rtl:true,
   animateOut: 'fadeOut',
-  animateOut: 'fadeIn',
+  animateIn: 'fadeIn',
   touchDrag  : false,
   mouseDrag  : false,
   navText:["<i class='fas fa-angle-right'></i>" ,"<i class='fas fa-angle-left'></i>"],
