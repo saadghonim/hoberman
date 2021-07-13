@@ -150,14 +150,9 @@ html[dir="ltr"] .menu_icon{
   padding: 5px 0;
   width: 25%;
 }
+
 .input_div{
   width: 50%;
-}
-html[dir="rtl"] .input_div{
-  padding: 20px 30px 20px 0;
-}
-html[dir="ltr"] .input_div{
-  padding: 20px 0 20px 30px;
 }
 .div_input{
   width: auto;
@@ -220,6 +215,10 @@ html[dir="rtl"] .login_{
 html[dir="ltr"] .login_{
   float: right;
 }
+.user_{
+  position: relative;
+
+}
 .login_ .bt_user:hover{
   color:rgb(224, 60, 49);
 }
@@ -231,6 +230,43 @@ html[dir="ltr"] .login_{
   display: flex;
   align-items: center;
   transition: .5s;
+}
+.drop_log{
+  position: absolute;
+  top: 34px;
+  left: -40px;
+  width: 130px;
+  text-align: center;
+  background: #fff;
+  z-index: 99;
+  width: 140px;
+  text-align: center;
+  background: #fff;
+  z-index: 99;
+  box-shadow: 0px 5px 14px 0px rgb(0 0 0 / 20%);
+  padding: 15px 20px;
+  font-size: 15px;
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: rgb(34, 55, 109);
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+html[dir="rtl"] .drop_log{
+  right: 0
+}
+html[dir="ltr"] .drop_log{
+  left: 0;;
+}
+.user_:hover .drop_log{
+  opacity: 1;
+  visibility: visible;
+}
+.drop_log a{transition: .5s;}
+.drop_log a:hover{
+  text-decoration: none;
+  color:rgb(224, 60, 49);
 }
 html[dir="rtl"] .login_ .bt_user{
   padding-left: 20px;
@@ -334,6 +370,12 @@ transform: scale(1.1);
     align-items: center;
   }
   .owl-carousel .owl-item img{height: 100%;}
+  html[dir="rtl"] .drop_log{
+    left: -40px;
+  }
+  html[dir="ltr"] .drop_log{
+    right: -40px;;
+  }
 }
 /* *******************************end login_main**************************** */
 
@@ -444,7 +486,7 @@ html[dir="ltr"] .mega_end{
 }
 .menu .submenu {
   position:absolute;
-  top: 0;
+  top: -8px;
   background-color: rgb(247, 247, 247);
   width: 271px;
   padding: 10px 20px;
@@ -743,6 +785,9 @@ html[dir="ltr"] .owl-dot{
 @media(max-width:767px){
   .Sections{
     margin-bottom: 40px;
+  }
+  .Sections .anc_div{
+    height: 160px;
   }
 }
 /* *******************************end Sections****************************  */
