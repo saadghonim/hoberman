@@ -94,31 +94,7 @@ responsive:{
 })
 /* ******************************* end cust_reviews************************* */
 
-
-
-$( ".menu .dropdown" ).hover(function() {
-  var index = $(this).index();
-  var subMenu = $(this).find("submenu")
-
-  // console.log( $(subMenu).style.top)
-
-  console.log( subMenu.style.top)
-
-  var top =  index*(-51);
-  // $(subMenu).css({top:top});
-  // $(subMenu).offset().top = top+"px";
-
-  $(subMenu).style.top = "200px";
-
-});
-
-
 /////////////////////**** start menu******//////////////
-
-
-
-$("menu_icon").click(function(){
-})
 
 
 
@@ -135,6 +111,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
+
   $('.moboverlay').fadeOut('fast');
   $("body").removeClass("ovr_");
 
