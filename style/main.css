@@ -707,7 +707,7 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
 }
 @media(max-width:576px){
   .slider .slide_img{
-    height: 332px;
+    height: 315px;
   }
   .text_slide p{
     font-size: 27px;
@@ -899,15 +899,33 @@ html[dir="ltr"] .item .price .pri_num span{
 .best_seller .owl-nav{
   display: none;
 }
+@media(min-width:1400px){
+  .Producer_div img{
+    height: 286px;
+  }
+}
+@media(max-width:1300px){
+  .Producer_div img{
+    height: 191px;
+  }
+}
 @media(max-width:767px){
   .best_seller{
     margin-bottom: 40px;
   }
+  .Producer_div img{
+    height: 156px;
+  }
   .item .price{
     margin-bottom: 20px;
   }
+  
 }
-
+@media(max-width:576px){
+  .Producer_div img{
+    height: 140px;
+  }
+}
 /* *******************************end best_seller**************************** */
 
 
@@ -1211,6 +1229,9 @@ footer .down_f:hover{
   line-height: 24px;
   text-decoration: none; 
   line-height: 30px;
+}
+.nest_list{
+  margin-bottom: 15px;
 }
 html[dir="rtl"] .f_list .nest_list li a{
   margin-right: 10px;

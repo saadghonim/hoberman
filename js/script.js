@@ -62,7 +62,7 @@ $('.best_seller .owl-carousel').owlCarousel({
             items:2
         },
         600:{
-            items:3
+            items:4
         },
         1000:{
             items:5
