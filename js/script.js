@@ -101,19 +101,17 @@ responsive:{
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "260px";
-  document.getElementById("main").style.marginRight = "260px";
-  $('.moboverlay').fadeIn('fast');
-  $("body").addClass("ovr_");
-
+    $('#main').addClass("active")
+   $('.moboverlay').fadeIn('500');
+    $("body").addClass("ovr_");
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginRight= "0";
+    $('#main').removeClass("active")
+  $('.moboverlay').fadeOut('500', function () {
+    $("body").removeClass("ovr_");
+});
 
-  $('.moboverlay').fadeOut('fast');
-  $("body").removeClass("ovr_");
 
 }
 $(".moboverlay").click(function(){
