@@ -252,6 +252,9 @@ html[dir="ltr"] .login_{
   opacity: 0;
   visibility: hidden;
   transition: .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 html[dir="rtl"] .drop_log{
   right: 0
@@ -371,10 +374,10 @@ transform: scale(1.1);
   }
   .owl-carousel .owl-item img{height: 100%;}
   html[dir="rtl"] .drop_log{
-    left: -40px;
+    right: -60px;
   }
   html[dir="ltr"] .drop_log{
-    right: -40px;;
+    left: -60px;;
   }
 }
 /* *******************************end login_main**************************** */
@@ -1436,7 +1439,6 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
 }
 
 #main {
-  position: relative;
   transition:.5s;
 }
 
@@ -1445,7 +1447,6 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
 }
 .ovr_{
   overflow-y: hidden;
-  overflow: hidden;
 }
 .moboverlay {
   position: fixed;
