@@ -350,7 +350,7 @@ html[dir="ltr"] .shopping_ .bt_shopping span{
 }
 @media(max-width: 767px){
   .logo img{
-    width:92%;
+    width: 156px;
     }
 }
 @media(max-width: 567px){
@@ -613,7 +613,7 @@ html[dir="ltr"] .nav_ .anc_nav{
   gap: 12px;
 }
 .slide_right{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .slide_left{
   overflow: hidden;
@@ -1006,7 +1006,10 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
     margin-bottom: 15px;
     display: inline-block;
   }
-
+  .sp_Product .pro-img{
+    margin: 0;
+    width: 100%;
+  }
   .sp_Product{
     margin-bottom: 40px;
   }
@@ -1447,6 +1450,9 @@ html[dir="ltr"] #main.active{
   transition: 0.5s;
   z-index: 999999999;
   padding-top: 5px;
+  height: 100vh;
+  overflow-y: auto;
+
 }
 html[dir="rtl"] .sidenav{
   right: -260px;
