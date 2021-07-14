@@ -457,20 +457,39 @@ html[dir="ltr"] .mega_end{
   align-items: center;
   transition: .5s
 }
-.style_a:hover>i{
-  color: rgb(224, 60, 49);
+
+.dropdown .dropdown:last-child >.mega_anc11 {
+  border: transparent;
+}
+.mega_anc1{
+  position: relative;
 }
 
-.style_a i{
+.mega_anc1:after{
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  color: rgb(153, 174, 232);
+  top: 12px;
+  font-weight: 900;
   font-size: 15px;
   color: #989898;
   text-transform: uppercase;
   transition: .5s;
 }
-.dropdown .dropdown:last-child >.mega_anc11 {
-  border: transparent;
+.style_a:hover::after{
+  color: rgb(224, 60, 49);
 }
 
+html[dir="rtl"] .mega_anc1:after{
+  content: "\f104";
+  left: 0;
+
+}
+
+html[dir="ltr"] .mega_anc1:after{
+  content: "\f105";
+  right: 0;
+}
 .bt_nav:hover + .megamenu,.megamenu:hover{
   visibility: visible;
   opacity: 1;
@@ -617,15 +636,6 @@ html[dir="ltr"] .nav_ .anc_nav{
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.slider .slide_img:after{
-  content:"";
-  position:absolute;
-  top:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  opacity:0.8;
 }
 html[dir="rtl"] .slider .slide_img:after{
   left:0;
@@ -789,6 +799,10 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
   text-align: center;
   width: 94%;
 }
+html[dir="ltr"] .Sections .anc_div p{
+  height: 56px;
+
+}
 .Sections .owl-nav{
   display: none;
 }
@@ -898,9 +912,10 @@ html[dir="ltr"] .Producer_div p{
   font-weight: 400;
   color: #737373;
   text-decoration: line-through;
+  margin-bottom: 4px;
 }
 html[dir="rtl"] .item .price .pri_num span{
-  margin-right: 5px;
+  margin-left: 5px;
 }
 html[dir="ltr"] .item .price .pri_num span{
   margin-left: 5px;
@@ -963,12 +978,12 @@ html[dir="ltr"] .item .price .pri_num span{
 .pro-img img{
   width:100%
 }
-/* html[dir="rtl"] .sp_Product .pro-img:first-child{
+html[dir="rtl"] .sp_Product .pro-img:first-child{
   margin-left: 15px;
 }
 html[dir="ltr"] .sp_Product .pro-img:first-child{
   margin-right: 15px;
-} */
+}
 .pro-text{
   text-align: center;
 }
@@ -1081,6 +1096,7 @@ html[dir="ltr"] .comment_div .img-comment{
   font-family: "Frutiger";
   font-weight: 700;
   width: 50%;
+  padding: 0 30px;
 }
 .sub_parant .inp_div{
   width: 50%;
@@ -1142,7 +1158,7 @@ html[dir="ltr"] .inp_div i{
   }
   .sub_parant input{
     height: 40px;
-    border: none;
+    border: none!important;
   }
   .sub_parant input:focus{
     border: 1px solid ;
@@ -1158,7 +1174,7 @@ html[dir="ltr"] .inp_div i{
 /* **************start footer************** */
 
 footer {
-  padding: 30px 0 70px ;
+  padding: 60px 0 70px ;
   border:none;
   border-bottom: 1px solid rgb(242, 242, 242);
 }
@@ -1228,6 +1244,7 @@ footer .down_f:hover{
   font-weight: 400;
   color: #787878;
   line-height: 30px;
+  text-transform: capitalize;
 }
 .nest_list li a:focus{
   text-decoration: none;
@@ -1276,7 +1293,7 @@ footer .f-bottom{
 }
 .footer_social{
   text-align: center;
-  padding: 30px 0 10px;
+  padding: 30px 0 5px;
 }
 footer .f_list {
   padding: 0; 
@@ -1336,10 +1353,10 @@ footer .f_list .nest_list {
     margin: 0px 0px 15px 0;
   }
   html[dir="ltr"] .social-media{
-    margin: 0px 15px 0px 0;
+    margin: 0px 0px 15px 0;
   }
   .Follow_us h2{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
 }
@@ -1390,7 +1407,7 @@ html[dir="ltr"] .copyright .right p{
 
 @media (max-width: 767px){
 .copyright .right{
-  padding: 6px 0 20px;
+  padding: 6px 0 5px;
 }   
 .copyright .right p{
   padding: 0;
