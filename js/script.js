@@ -97,7 +97,6 @@ responsive:{
 /////////////////////**** start menu******//////////////
 
 
-
 });
 
 function openNav() {
@@ -115,7 +114,7 @@ function closeNav() {
 
 }
 $(".moboverlay").click(function(){
-  $(".closebtn").trigger("click");
+  closeNav();
  
 });
 

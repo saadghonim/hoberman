@@ -323,16 +323,12 @@ html[dir="ltr"] .shopping_ .bt_shopping span{
   color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
-  transition: .2s; 
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.shopping_ .bt_shopping:hover span{
-transform: scale(1.1);
 
-}
 @media(max-width:992px){
   .login_main{
     flex-wrap: wrap;
@@ -546,10 +542,10 @@ html[dir="ltr"] .bt_nav .fa-bars{
   top:15px
 }
 html[dir="rtl"] .fa-angle-down{
-  left: 10px;
+  left: 16px;
 }
 html[dir="ltr"] .fa-angle-down{
-  right: 10px;
+  right: 16px;
 }
 .nav_bar{
   display: flex;
@@ -967,12 +963,12 @@ html[dir="ltr"] .item .price .pri_num span{
 .pro-img img{
   width:100%
 }
-html[dir="rtl"] .sp_Product .pro-img:first-child{
+/* html[dir="rtl"] .sp_Product .pro-img:first-child{
   margin-left: 15px;
 }
 html[dir="ltr"] .sp_Product .pro-img:first-child{
   margin-right: 15px;
-}
+} */
 .pro-text{
   text-align: center;
 }
@@ -987,8 +983,10 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
 @media(max-width:767px){
   .sp_Product{
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
   }
-
+  
   .pro-img a{
     margin-bottom: 15px;
     display: inline-block;
@@ -997,12 +995,15 @@ html[dir="ltr"] .sp_Product .pro-img:first-child{
   .sp_Product{
     margin-bottom: 40px;
   }
-  html[dir="rtl"] .sp_Product .pro-img:first-child{
+  /* html[dir="rtl"] .sp_Product .pro-img:first-child{
     margin-left: 15px;
   }
   html[dir="ltr"] .sp_Product .pro-img:first-child{
     margin-right: 15px;
-  }
+  } */
+  .pro-img{
+    margin: auto;
+    }
 }
 
 /* ******************************* end sp_Product*********************** */
@@ -1141,6 +1142,7 @@ html[dir="ltr"] .inp_div i{
   }
   .sub_parant input{
     height: 40px;
+    border: none;
   }
   .sub_parant input:focus{
     border: 1px solid ;
@@ -1148,6 +1150,7 @@ html[dir="ltr"] .inp_div i{
   .inp_div i{
     top: 12px;
   }
+
 }
 /* ******************************* end subscribe************************* */
 
@@ -1425,7 +1428,7 @@ html[dir="ltr"] #main.active{
   background-color: #182a5a;
   overflow-x: hidden;
   transition: 0.5s;
-  z-index: 99;
+  z-index: 999999999;
   padding-top: 5px;
 }
 html[dir="rtl"] .sidenav{
@@ -1551,4 +1554,12 @@ content: "\f106"; }
 
 .bt_nav-div .dropdown{
   position: unset;
+}
+
+.outer-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: auto;
 }
