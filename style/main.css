@@ -720,9 +720,6 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
   .slide_left {
     margin: auto;
   }
-  .slider .slide_img{
-    height: 409px;
-  }
   .owl-carousel .owl-nav{
     display: none;
   }
@@ -734,9 +731,6 @@ html[dir="ltr"] .slider .owl-carousel .owl-nav button.owl-prev{
   }
 }
 @media(max-width:576px){
-  .slider .slide_img{
-    height: 315px;
-  }
   .text_slide p{
     font-size: 27px;
   }
@@ -1223,7 +1217,7 @@ footer .down_f {
   color: rgb(0, 0, 0);
   position: relative;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 } 
 
 
@@ -1263,7 +1257,7 @@ footer .down_f:hover{
   text-align: right;
   display: flex;
   color: rgb(0, 0, 0);
-  height: 40px;
+  height: 15px;
   line-height: 28px;
 }
 .f_list .nest_list li a{
@@ -1272,9 +1266,7 @@ footer .down_f:hover{
   text-decoration: none; 
   line-height: 30px;
 }
-.nest_list{
-  margin-bottom: 20px;
-}
+
 html[dir="rtl"] .f_list .nest_list li a{
   margin-right: 10px;
 }
@@ -1310,20 +1302,20 @@ footer .f_list {
   content: "\f107";
   position: absolute;
   color: rgb(0, 0, 0);
-  top: -3px;
+  top: -11px;
   font-size: 15px;
   line-height: 3.273;
   font-weight: 900;
 }
-  html[dir="rtl"] .down_f:after {
-    left: 0;
-  }
-  html[dir="ltr"] .down_f:after {
-    right: 0;
-  }
-  .down_f[aria-expanded="true"]:after {
+.down_f[aria-expanded="true"]:after {
   content: "\f106"; } 
   .down_f{margin-bottom: 0;}
+}
+html[dir="rtl"] .down_f:after {
+  left: 0;
+}
+html[dir="ltr"] .down_f:after {
+  right: 0;
 }
 @media (min-width: 991px) {
 footer .f_list .nest_list {
@@ -1343,11 +1335,9 @@ footer .f_list .nest_list {
   html[dir="ltr"] footer .f_list .nest_list {
     text-align: left;
   }
+
   footer .down_f{
-    line-height: 45px;
-  }
-  footer .down_f{
-    margin-bottom: 0;
+    margin-top: 20px;
   }
   .social-media{
     margin: 0px 0px 15px 0;
@@ -1473,6 +1463,21 @@ html[dir="ltr"] .sidenav{
   border-bottom: 1px solid #30406b;
 }
 
+.dirplink:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  position: absolute;
+  color: rgb(153, 174, 232);
+  top: 1px;
+  font-size: 15px;
+  line-height: 3.273;
+  transition: .3s;
+  font-weight: 900;
+}
+.dirplink[aria-expanded="true"]:after {
+  transform: rotate(180deg);
+  } 
+
 html[dir="rtl"] .sidenav a{
   padding: 10px 20px 10px 31px;
 }
@@ -1545,16 +1550,7 @@ html[dir="ltr"] .lang_menu .lang_h, .lang_lin{
 #accordionExample li:nth-of-type(-2) .drop_ a{
   border: 0;
 }
-.drop_:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f107";
-  position: absolute;
-  color: rgb(153, 174, 232);
-  top: 1px;
-  font-size: 15px;
-  line-height: 3.273;
-  font-weight: 900;
-}
+
 html[dir="rtl"] :after, :before{
   left: 20px;
 }
