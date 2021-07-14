@@ -101,7 +101,7 @@ responsive:{
 
 function openNav() {
     $('#main').addClass("active")
-   $('.moboverlay').fadeIn('500');
+    $('.moboverlay').fadeIn('500');
     $("body").addClass("ovr_");
 }
 
@@ -115,9 +115,7 @@ function closeNav() {
 }
 $(".moboverlay").click(function(){
   closeNav();
- 
 });
-
 
 
 /////////////////////**** end menu******//////////////
