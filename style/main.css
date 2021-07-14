@@ -471,6 +471,9 @@ html[dir="ltr"] .mega_end{
   text-transform: uppercase;
   transition: .5s;
 }
+.dropdown .dropdown:last-child >.mega_anc11 {
+  border: transparent;
+}
 
 .bt_nav:hover + .megamenu,.megamenu:hover{
   visibility: visible;
@@ -958,7 +961,12 @@ html[dir="ltr"] .item .price .pri_num span{
   overflow: hidden;
   width: 50%;
 }
-
+.pro-img a{
+  width: 100%;
+}
+.pro-img img{
+  width:100%
+}
 html[dir="rtl"] .sp_Product .pro-img:first-child{
   margin-left: 15px;
 }
