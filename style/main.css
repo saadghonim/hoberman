@@ -1456,8 +1456,11 @@ html[dir="ltr"] .sidenav a{
 .sidenav a:hover {
   color: #ffffff;
 }
-.sidenav a:nth-child(17){
-  border: none;
+#menu > li:last-child > a{
+  border: transparent;
+}
+.submenu li:last-child > a{
+  border: transparent;
 }
 .lang_menu .lang_h, .lang_lin{
   font-size: 15px;
